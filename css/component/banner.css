@@ -1,0 +1,45 @@
+.banner {
+  /* 1. Set a background image */
+ 	background-image: url(../../images/background.jpg);   
+  /* 2. Make the background image cover the banner div */
+	background-size: cover;     
+  /* 3. Center the image */
+	background-position: center;
+	color: white;
+	padding: 150px 0px;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  font-variant: small-caps;
+}
+.banner h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0.8;
+  text-align: center;
+  font-variant: small-caps;
+}
+.banner a{
+	font-size: 25px;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+
+linear-gradient(angle, start_color start_point, end_color end_point)
+
+.banner {
+  background-image:
+    /* Transparent gradient above */
+    linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 50%),
+    /* Then image below */
+    url('images/background.jpg');
+}
+
+.banner-with-flat-filter {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/background.jpg');
+}
